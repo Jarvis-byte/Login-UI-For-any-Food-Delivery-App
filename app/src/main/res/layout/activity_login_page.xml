@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".loginPage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+
+            android:scaleType="fitXY"
+            android:src="@drawable/bg2" />
+
+        <ImageView
+            android:id="@+id/obj2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/obj2" />
+
+        <TextView
+            android:id="@+id/login_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/obj2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="140dp"
+            android:text="LOGIN"
+            android:textColor="#120C0B"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile_login_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_gradient_state_white"
+            android:drawableLeft="@drawable/mobile_drawable"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="Enter Your Mobile Number"
+            android:textAlignment="textStart"
+            android:textColor="#120C0B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/facebook_login_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_gradient_state_white"
+            android:drawableLeft="@drawable/facebook_drawable"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="Continue With Facebook"
+            android:textAlignment="textStart"
+            android:textColor="#120C0B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/google_login_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/facebook_login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_gradient_state_white"
+            android:drawableLeft="@drawable/google_drawable"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="Continue With Google"
+            android:textAlignment="textStart"
+            android:textColor="#120C0B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/email_login_btn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/google_login_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_gradient_state_white"
+            android:drawableLeft="@drawable/email_drawable"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="Continue With Email"
+            android:textAlignment="textStart"
+            android:textColor="#120C0B"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="By Continuing,You Agree To Our\n Terms of Service &amp; Privacy Policy"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
