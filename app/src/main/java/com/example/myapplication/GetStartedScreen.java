@@ -50,18 +50,6 @@ public class GetStartedScreen extends AppCompatActivity {
         secondBelow.setSpan(new RelativeSizeSpan(0.3f), 0,secondBelow.length(), 0);
         get_started_button.append(secondBelow);
 
-
-
-
-
-
-
-
-
-
-
-
-
         //*****************************************************************
 
         already_member_button.setOnClickListener(new View.OnClickListener() {

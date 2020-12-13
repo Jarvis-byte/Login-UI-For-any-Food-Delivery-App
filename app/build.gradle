@@ -45,4 +45,5 @@ dependencies {
 
 // No Internet Dialouge Box
     implementation 'am.appwise.components:NoInternetDialog:1.1.3'
+
 }
