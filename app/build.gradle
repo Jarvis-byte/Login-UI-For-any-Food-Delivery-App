@@ -36,4 +36,13 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //OKHTTP
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+
+    //ProgressBar
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+// No Internet Dialouge Box
+    implementation 'am.appwise.components:NoInternetDialog:1.1.3'
 }

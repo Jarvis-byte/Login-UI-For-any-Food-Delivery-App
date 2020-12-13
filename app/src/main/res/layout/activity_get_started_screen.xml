@@ -5,91 +5,98 @@
     android:layout_height="match_parent"
     tools:context=".GetStartedScreen">
 
-    <RelativeLayout
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/bg_main">
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
 
-        <ImageView
-            android:id="@+id/bg1"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/bg1" />
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_main">
 
-        <ImageView
-            android:id="@+id/obj1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
-            android:src="@drawable/obj1" />
+            <ImageView
+                android:id="@+id/bg1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg1" />
 
-        <TextView
-            android:id="@+id/txt_hurry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/obj1"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
-            android:text="HURRY!!"
-            android:textAlignment="center"
-            android:textAllCaps="true"
-            android:textColor="#120C0B"
-            android:textSize="40dp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/obj1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/obj1" />
 
-        <TextView
-            android:id="@+id/hungerdont_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_hurry"
-            android:layout_marginStart="20dp"
-            android:text="HUNGER DON'T WAIT"
-            android:textColor="#120C0B"
-            android:textSize="20dp" />
+            <TextView
+                android:id="@+id/txt_hurry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/obj1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="HURRY!!"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#120C0B"
+                android:textSize="40dp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/get_started_button"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/hungerdont_txt"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="150dp"
-            android:background="@drawable/rounded_gradient_state"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="GET STARTED"
-            android:textColor="#fff"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            <TextView
+                android:id="@+id/hungerdont_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_hurry"
+                android:layout_marginStart="20dp"
+                android:text="HUNGER DON'T WAIT"
+                android:textColor="#120C0B"
+                android:textSize="20dp" />
 
-        <TextView
-            android:id="@+id/continue_without_button"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/get_started_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rounded_gradient_state_white"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Continue without Login"
-            android:textColor="#120C0B"
-            android:textSize="20dp" />
+            <TextView
+                android:id="@+id/get_started_button"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/hungerdont_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/rounded_gradient_state"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="GET STARTED"
+                android:textColor="#fff"
+                android:textSize="25dp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/already_member_button"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/continue_without_button"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/rounded_gradient_state_white"
-            android:gravity="center"
-            android:padding="5dp"
-            android:text="Already a Tiffina member? LOGIN"
-            android:textColor="#120C0B"
-            android:textSize="20dp" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/continue_without_button"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/get_started_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_gradient_state_white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Continue without Login"
+                android:textColor="#120C0B"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/already_member_button"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/continue_without_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_gradient_state_white"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Already a Tiffina member? LOGIN"
+                android:textColor="#120C0B"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
